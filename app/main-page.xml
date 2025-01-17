@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="SMS Sync" icon="" />
+    
+    <StackLayout class="p-4">
+        <ListView items="{{ messages }}" class="list-group">
+            <ListView.itemTemplate>
+                <StackLayout class="list-group-item">
+                    <Label text="{{ address }}" class="font-bold" />
+                    <Label text="{{ body }}" textWrap="true" class="text-gray-600" />
+                    <Label text="{{ date }}" class="text-sm text-gray-400" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
